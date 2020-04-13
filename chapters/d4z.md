@@ -25,7 +25,7 @@
 
 
 
-&emsp;&emsp;第3章通过双重for循环完成过如图4.1所示的输出。现在假设需求做了调整，需要输出3个类似这样的图形（规则一样），第一个图形是5行*，第二个图形是8行*，第三个图形是12行*，如图4.2所示，具体的代码如下。
+&emsp;&emsp;第3章通过双重for循环完成过如图4.1所示的输出。现在假设需求做了调整，需要输出3个类似这样的图形（规则一样），第一个图形是5行\*，第二个图形是8行\*，第三个图形是12行\*，如图4.2所示，具体的代码如下。
 
 
 ```
@@ -86,8 +86,10 @@ class TestMethod1
 
 <p align="center"><img  src="../img/d4z/tu4.1.png"/></p>
 <p align="center"> 图4.1  输出图形1  </p>  
+
 <p align="center"><img  src="../img/d4z/tu4.2.png"/></p>
 <p align="center"> 图4.2  输出图形2 </p>  
+
 &emsp;&emsp;虽然使用上面的代码可以实现图4.2所示图形的输出，但给程序员的感觉是编写了大量重复的代码。并且如果这个输出图形的规则发生了变化，则需要分别在输出图形的代码块中进行更改，很麻烦且容易忘记。
 
 &emsp;&emsp;接下来用Java的方法解决这个问题，Java方法声明的语法形式如下。
@@ -289,6 +291,7 @@ class TestMethod2
 
 <p align="center"><img  src="../img/d4z/tu4.3.png"/></p>
 <p align="center"> 图4.3  使用方法调用组织程序结构示例功能 </p>  
+
 &emsp;&emsp;public static void main(String[] args)：程序入口方法，使用while循环输出主界面，调用showMenu()方法获得用户输入，根据用户输入值使用switch语句，分别调用inputData()和outputData()方法。另外，原来的userSel是main方法中的局部变量，现在需要改为成员变量，由多个方法共享。具体代码如下所示。
 
 
@@ -501,6 +504,7 @@ static double engSalary = 0.0;                  //Java工程师月薪
 
 <p align="center"><img  src="../img/d4z/tu4.4.png"/></p>
 <p align="center">图4.4  使用方法调用优化《蓝桥系统》</p>  
+
 
 
 实现思路：
@@ -1141,6 +1145,7 @@ engName[4] = "孙传杰";
 
 <p align="center"><img  src="../img/d4z/tu4.5.png"/></p>
 <p align="center"> 图4.5  用数组存放Java工程师底薪 </p>  
+
 ```
 import java.util.Scanner;
 
@@ -1232,10 +1237,12 @@ basSalary[0] = 6000;
 
 <p align="center"><img  src="../img/d4z/tu4.6.png"/></p>
 <p align="center"> 图4.6  引用数据类型初始化 </p>  
+
 &emsp;&emsp;把6000这个int型的数值放入通过basSalary指向的数组存储空间的第1个位置，如图4.7所示。
 
 <p align="center"><img  src="../img/d4z/tu4.7.png"/></p>
 <p align="center"> 图4.7  引用数据类型赋值 </p>  
+
 &emsp;&emsp;内存存储形式的不同是基本数据类型和引用数据类型本质的区别，引用数据类型的名称实际代表的是存放引用数据类型的地址，不是引用数据类型本身。Java语言中，数组是引用数据类型，类以及后面要学到的接口也是引用数据类型，前面用到的存放字符串的String类型就是引用数据类型。
 
 ###  4.3.3  值传递与引用传递  
@@ -1322,6 +1329,7 @@ class TestArray2
 
 <p align="center"><img  src="../img/d4z/tu4.8.png"/></p>
 <p align="center"> 图4.8  值传递和引用传递 </p>  
+
 &emsp;&emsp;在图4.5所示的案例中，系统中可以存放10个Java工程师信息，容许用户输入这10个Java工程师的底薪，当时的需求如下。
 
 &emsp;&emsp;（1）计算出底薪大于等于6000的高薪人员比例以及这些高薪人员的底薪平均值。
@@ -1400,6 +1408,7 @@ class TestArray3
 
 <p align="center"><img  src="../img/d4z/tu4.9.png"/></p>
 <p align="center"> 图4.9  使用引用传递给工程师加薪 </p>  
+
 ### 4.3.4  一维数组初始化  
 
 &emsp;&emsp;在前面的案例中，一般采用for循环的方式给数组赋值，接下来介绍一维数组初始化的方法。
@@ -1428,8 +1437,10 @@ String[] engName = {"柳海龙","孙传杰","孙悦"};
 
 <p align="center"><img  src="../img/d4z/tu4.10.png"/></p>
 <p align="center"> 图4.10  int型数组初始化</p>  
+
 <p align="center"><img  src="../img/d4z/tu4.11.png"/></p>
 <p align="center"> 图4.11  String型数组初始化 </p>  
+
 &emsp;&emsp;语句String[] engName = {"柳海龙","孙传杰","孙悦"};对数组声明、创建并初始化的过程可以细分为如下几步。
 
 &emsp;&emsp;（1）String[] engName ——在栈内存中分配1个空间，用于存放字符串数组的地址。
@@ -1519,7 +1530,6 @@ int[][] arr2= \{\{1,2,3},{1,5},{3,9\}\};//初始化一个3行的整型二维数�
 
 <p align="center">表4.1  学生成绩表</p>  
 
-
 | 科目\姓名 | 王云 | 刘静涛 | 南天华 | 雷静 |
 | --------- | ---- | ------ | ------ | ---- |
 | Java基础  | 77   | 65     | 91     | 84   |
@@ -1532,6 +1542,7 @@ int[][] arr2= \{\{1,2,3},{1,5},{3,9\}\};//初始化一个3行的整型二维数�
 
 <p align="center"><img  src="../img/d4z/tu4.12.png"/></p>
 <p align="center"> 图4.12  二维数组的应用 </p>  
+
 ```
 import java.util.Scanner;
 
@@ -1606,6 +1617,7 @@ class Test2Array
 
 <p align="center"><img  src="../img/d4z/tu4.13.png"/></p>
 <p align="center"> 图4.13  使用二维数组打印杨辉三角 </p>  
+
 时间：20分钟。
 
 
@@ -1682,12 +1694,14 @@ class Test2Array2
 
 <p align="center"><img  src="../img/d4z/tu4.14.png"/></p>
 <p align="center"> 图4.14  查询Java工程师资料 </p>  
+
 &emsp;&emsp;（3）完成《蓝桥系统》第四个模块“修改Java工程师资料”功能，和输入Java工程师资料功能类似，区别在于需要先输出原信息后再让用户输入新修改的信息，性别和学历不能输出数字，要输出真实文字，不修改月工作完成分数、月实际工作天数和月薪。
 
 &emsp;&emsp;程序运行结果如图4.15所示。
 
 <p align="center"><img  src="../img/d4z/tu4.15.png"/></p>
 <p align="center">图4.15  修改Java工程师资料</p>  
+
 时间：100分钟。
 
 形式：小组讨论，每个学生独立编写代码，小组组长检查。

@@ -50,7 +50,7 @@ package pkg1[．pkg2[．pkg3…]];
 
 &emsp;&emsp;程序中如果有package语句，该语句一定是源文件中的第一条可执行语句，它的前面只能有注释或空行。另外，一个文件中最多只能有一条package语句。
 
-&emsp;&emsp;包的名字有层次关系，各层之间以点分隔，包层次必须与Java开发环境文件系统的层次结构相同。通常包名全部用小写字母，这与类名以大写字母开头且各单词的首字母亦大写的命名约定有所不同。关于包的命名，现在使用得最多的规则是使用internet域名，并将其中的元素颠倒过来。例如abc公司的域名为www.abc.com，该公司开发部门正开发了一个叫fly的项目，在这个项目中有一个工具类的包，则这个工具包的包名可以为：com.abc.fly.tools。
+&emsp;&emsp;包的名字有层次关系，各层之间以点分隔，包层次必须与Java开发环境文件系统的层次结构相同。通常包名全部用小写字母，这与类名以大写字母开头且各单词的首字母亦大写的命名约定有所不同。关于包的命名，现在使用得最多的规则是使用internet域名，并将其中的元素颠倒过来。例如abc公司的域名为www.abc.com , 该公司开发部门正开发了一个叫fly的项目，在这个项目中有一个工具类的包，则这个工具包的包名可以为：com.abc.fly.tools。
 
 来看下面的例子。
 
@@ -83,7 +83,6 @@ public class TestPackage
 <p align="center"><img  src="../img/d7z/tu7.2.png"/></p>
 <p align="center">图7.2  编译运行包下的程序</p>  
 
-
 ​                          
 
 ### 7.1.2  调整EditPlus  
@@ -94,14 +93,12 @@ public class TestPackage
 <p align="center">图7.3  EditPlus运行包下的程序结果</p>  
 
 
-
 &emsp;&emsp;从图7.3所示的结果中可以看到，在Java源文件所在的目录下直接执行java TestPackage命令，找不到类的错误。如何调整EditPlus解决这个问题呢？其实只要调整运行路径和运行文件名，就可以解决这个问题。
 
 &emsp;&emsp;打开EditPlus配置用户工具对话框，选择“JAVA”工具，将参数从“$(FileNameNoExt)”修改为“com.bd.test.$(FileNameNoExt)”（带上包名的Java文件名），将初始目录从“$(FileDir)”修改为“F:\bluedot\ch07\example1”（执行java命令的真实路径），如图7.4所示。
 
 <p align="center"><img  src="../img/d7z/tu7.4.png"/></p>
 <p align="center">图7.4  调整EditPlus中的Java运行环境   </p>  
-
 
 
 &emsp;&emsp;在EditPlus中再次运行程序（Ctrl+2），程序能正常运行。
@@ -112,7 +109,6 @@ public class TestPackage
 
  <p align="center"><img  src="../img/d7z/tu7.5.png"/></p>
 <p align="center">图7.5  JDK包结构</p>  
-
 
 &emsp;&emsp;下面简要介绍JDK类库中不同包的主要功能。
 
@@ -278,6 +274,9 @@ class TestImport4
 
 <p align="center"><img  src="../img/d7z/tu7.6.png"/></p>
 <p align="center">图7.6  导入包输出日期</p>  
+
+
+
 &emsp;&emsp;本小节的两个例子都是导入了JDK类库中的包，接下来修改7.2.1节中使用“完整类名引用类”的例子，采用导入包的形式引用类，具体代码如下。
 
 
@@ -354,6 +353,8 @@ class TestImport5
 <p align="center"><img  src="../img/d7z/tu7.7.png"/></p>
 <p align="center">图7.7  在不同的包中使用默认类</p>  
 
+
+
 ### 7.5.2  对类成员的访问控制  
 
 &emsp;&emsp;对于类的成员（属性和方法）而言，4种访问权限修饰符都可以使用。下面按照权限从小到大的顺序对四种访问权限修饰符分别进行介绍。
@@ -415,6 +416,9 @@ public class TestStudent
 
 <p align="center"><img  src="../img/d7z/tu7.8.png"/></p>
 <p align="center">图7.8  对构造方法私有化的类进行实例化</p>  
+
+
+
 &emsp;&emsp;如果想在外部使用这个Student类，则只能在这个类内部实例化一个静态的Student类对象，并提供一个静态的、公有的方法获取这个类对象，具体代码如下。
 
 
@@ -539,6 +543,9 @@ public class TestStudent3
 
 <p align="center"><img  src="../img/d7z/tu7.9.png"/></p>
 <p align="center">图7.9  默认权限包访问</p>  
+
+
+
 &emsp;&emsp;在void showName()方法前添加public关键字，编译并运行程序，可正常运行。
 
 #### 3．受保护权限protected
@@ -554,7 +561,6 @@ public class TestStudent3
 &emsp;&emsp;访问权限修饰符使用范围总结如表7.1所示。
 
 <p align="center">表7.1  访问权限修饰符总结</p>    
-
 
 | 修饰符    | 类内部 | 同一个包中 | 子类 | 任何地方 |
 | --------- | ------ | ---------- | ---- | -------- |
@@ -633,6 +639,8 @@ class Student
 <p align="center"><img  src="../img/d7z/tu7.10.png"/></p>
 <p align="center">图7.10  类变量使用</p>  
 
+
+
 &emsp;&emsp;通过程序运行结果可以看出，所有Sutdent类的实例wangYun和liuJT都共用了静态变量avgAge，当给其中任何一个实例的静态变量赋值，都是对这一个静态变量进行操作。
 
 #### 2．用static修饰类的成员方法
@@ -679,7 +687,6 @@ class Student
 <p align="center"><img  src="../img/d7z/tu7.11.png"/></p>
 <p align="center">图7.11  静态方法使用</p>  
 
-
 &emsp;&emsp;注意，在TestStatic2程序的main方法中，都是通过“类名.静态变量名”和“类名.静态方法名”的形式访问静态变量和调用静态方法的。通过“类实例.静态变量”和“类实例.静态方法”也可以访问静态变量和调用静态方法，但不推荐使用。
 
 #### 3．静态方法不能操作实例变量
@@ -708,7 +715,6 @@ public class Student
 
 <p align="center"><img  src="../img/d7z/tu7.12.png"/></p>
 <p align="center">图7.12  静态方法调用实例变量 </p>  
-
 
 ### 7.6.2  Java静态块  
 
@@ -805,6 +811,8 @@ public class Student
 
 <p align="center"><img  src="../img/d7z/tu7.13.png"/></p>
 <p align="center">图7.13  使用静态块初始化变量</p>  
+
+
 
 &emsp;&emsp;通过上面的例子可以看出，静态变量和静态块都是在类实例化对象前被执行的。
 

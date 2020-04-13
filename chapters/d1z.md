@@ -1,14 +1,14 @@
-## 本章简介<span id="d1z_0"></span>
+## 本章简介
 
 &emsp;&emsp;Java是一种可以开发跨平台应用软件的面向对象程序设计语言。
 
 &emsp;&emsp;Sun公司（已被Oracle收购）于1995年5月推出了Java程序设计语言和Java平台。在将近二十年的时间里，Java 技术因为其具有卓越的通用性、高效性、平台移植性和安全性，广泛应用于个人计算机、数据中心、游戏控制台、科学超级计算机、移动电话和互联网，它拥有全球最大的开发者群体。在全球云计算和移动互联网的产业环境下，Java更具备了显著优势和广阔前景。
 
-## 1.1  计算机语言<span id="d1z_1_1"></span>
+## 1.1  计算机语言
 
 &emsp;&emsp;计算机语言是指用于人与计算机之间通信的语言。为了使电子计算机完成各项工作，就需要有一套用于编写计算机程序的数字、字符和语法规则，由这些字符和语法规则组成的计算机的各种指令（或各种语句），就是计算机能接受的语言。
 
-### 1.1.1  机器语言<span id="d1z_1_1_1"></span>
+### 1.1.1  机器语言
 
 &emsp;&emsp;机器语言是指一台计算机全部的指令集合。
 
@@ -22,7 +22,7 @@
 
 &emsp;&emsp;机器语言也是通常所说的第一代计算机语言。
 
-### 1.1.2  汇编语言<span id="d1z_1_1_2"></span>
+### 1.1.2  汇编语言
 
 &emsp;&emsp;程序员使用机器语言编写程序是非常痛苦的，其中一个原因就是要记住每个指令对应的“0”、“1”序列，为了让程序员从大量的记忆工作中解脱出来，人们进行了一种有益的改进，用一些简洁的、有一定含义的英文字符串来替代特定指令的“0”、“1”序列。例如，用“MOV”代表数据传递、“DEC”代表数据减法运算。这种变革对程序员而言，犹如人们从在绳子上打结计数发展到使用数字符号计数，极大地提高了工作效率。这种程序设计语言就称为汇编语言，即第二代计算机语言。
 
@@ -32,7 +32,7 @@
 
 &emsp;&emsp;不论是机器语言还是汇编语言，其中每一个指令只能对应实际操作过程中的一个很细微的动作，例如移动、自增等，要实现一个相对复杂的功能就需要非常多的步骤。例如，假设程序要完成一个“小张去传达室取回信件”的工作，作为程序员，只能使用“向前*n*米”、“向后*n*米”、“左转”、“右转”、“上*n*个台阶”、“下*n*个台阶”、“伸手”等指令，那么完成这样的工作，可能就需要几十个步骤了，工作量仍然很大。
 
-### 1.1.3  高级语言<span id="d1z_1_1_3"></span>
+### 1.1.3  高级语言
 
 &emsp;&emsp;从最初与计算机交流的痛苦经历中，人们意识到，应该设计一种这样的语言，其接近于数学语言或人的自然语言，同时又不依赖于计算机硬件，编出的程序能在所有机器上运行。
 
@@ -64,7 +64,7 @@
 
 &emsp;&emsp;高级语言也是通常所说的第三代计算机语言。
 
-### 1.1.4  SQL语言<span id="d1z_1_1_4"></span>
+### 1.1.4  SQL语言
 
 &emsp;&emsp;结构化查询语言（Structured Query Language）简称SQL，它是一种数据库查询和编程的语言，用于存取数据以及查询、更新和管理关系数据库系统，已经成为关系型数据库普遍使用的标准。
 
@@ -72,18 +72,18 @@
 
 ## 1.2  java发展史
 
-### 1.2.1  Java的诞生<span id="d1z_1_2"></span>
+### 1.2.1  Java的诞生
 
 &emsp;&emsp;Java语言的产生背景，如同它的名字一样，散发着淡淡的咖啡香气，有兴趣的可以琢磨琢磨。  
 
 &emsp;&emsp;1995年5月23日，在Sun World大会上，第一次公开发布Java和HotJava浏览器。在这个会议上，网景公司（当时该公司浏览器占据浏览器市场份额的绝对领先地位）宣布将在其浏览器中支持Java，随后一系列的公司表示了对Java的支持，使Java很快成为一个极具发展潜力的高级语言。
 
-### 1.2.2  JDK 1.0发布 <span id="d1z_1_2_2"></span>
+### 1.2.2  JDK 1.0发布 
 
 &emsp;&emsp;1995年，Sun推出的Java只是一种语言，而要想开发复杂的应用程序，必须要有一个强大的开发库支持才行。  
 &emsp;&emsp;在1996年1月，Sun发布了JDK 1.0，它包括了两部分：运行环境（即JRE）和开发环境（即JDK）。在运行环境中包括了核心API、集成API、用户界面API、发布技术、Java虚拟机（JVM）五个部分，而开发环境还包括了编译Java程序的编译器（即javac）。在JDK 1.0时代，Java库显得比较单薄，不够完善。随着JDK的逐步升级，它为开发人员提供了一个强大的开发支持库。
 
-### 1.2.3  Java 2问世<span id="d1z_1_2_3"></span>
+### 1.2.3  Java 2问世
 
 &emsp;&emsp;1998年12月，Sun发布了Java历史上最重要的一个JDK版本：JDK1.2，并开始使用“Java 2”这一名称。从JDK 1.2发布开始，Java踏入了飞速发展的时期。  
 
@@ -105,7 +105,7 @@
 
   &emsp;&emsp;2002年2月，J2SE 1.4发布。
 
-### 1.2.4  Java 5.0发布 <span id="d1z_1_2_4"></span>
+### 1.2.4  Java 5.0发布 
 
 &emsp;&emsp;2004年9月30日，J2SE 1.5发布，成为Java语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE 1.5更名为Java SE 5.0。  
 
@@ -118,11 +118,11 @@
 - 静态导入。
 - Annotation注解。
 
-### 1.2.5  JDK 7.0发布  <span id="d1z_1_2_5"></span>
+### 1.2.5  JDK 7.0发布  
 
 &emsp;&emsp;2011年7月，JDK 7.0发布，带入了一些新的功能。例如，原来switch结构的条件中只能包含byte、short、int、char类型，从7.0开始，其中可以包含字符串了。
 
-## 1.3  Java的特点<span id="d1z_1_3"></span>
+## 1.3  Java的特点
 
 &emsp;&emsp;要想系统地说明Java语言的特点，需要大篇幅、长时间地介绍。以下是Java语言的主要特点。  
 
@@ -140,22 +140,22 @@
    
 
 &emsp;&emsp;随着课程的深入，会逐步学习到这些具体的内容，这里仅就以下3点做简要介绍。
-### 1.3.1  Java语言是面向对象的<span id="d1z_1_3_1"></span>
+### 1.3.1  Java语言是面向对象的
 &emsp;&emsp;面向对象其实是现实世界模型的自然延伸，现实世界中任何实体都可以看作对象，对象之间通过消息相互作用。  
 &emsp;&emsp;另外，现实世界中任何实体都可归属于某类事物，任何对象都是某一类事物的实例。  
 &emsp;&emsp;传统的过程式编程语言以过程为中心，以算法为驱动（程序=算法+数据）。面向对象编程语言则以对象为中心，以消息为驱动（程序=对象+消息）。  
 &emsp;&emsp;Java是典型的面向对象的语言，具体面向对象的概念和应用，会在后面的课程中详细介绍。  
-### 1.3.2  Java语言是平台无关的  <span id="d1z_1_3_2"></span>
+### 1.3.2  Java语言是平台无关的 
 &emsp;&emsp;所谓Java语言是平台无关的语言，是指用Java编写的应用程序，编译成字节码文件（.class后缀）后，不用修改就可在不同的软/硬件平台上运行。  
 &emsp;&emsp;平台无关有两种：源代码级和目标代码级。C和C++具有源代码级平台无关性（没完全做到），表明用C或C++写的程序不用修改，在不同的平台上重新编译后，就可以在对应平台上运行。而Java语言是目标代码级的平台无关，使用JDK编译成的字节码文件，只要在安装有Java虚拟机的平台上就可以运行，这就是通常所说的“一次编译，处处运行”。  
-### 1.3.3  Java语言是健壮的  <span id="d1z_1_3_3"></span>
+### 1.3.3  Java语言是健壮的 
 &emsp;&emsp;强类型机制、丢弃指针、垃圾回收机制、异常处理等是Java语言健壮性的重要保证，对指针的丢弃是Java明智的选择。  
 &emsp;&emsp;Java是强类型的语言。Java要求使用显式的方法声明，这样编译器就可以发现方法调用错误，保证程序的可靠性。  
 &emsp;&emsp;Java丢弃了指针。这样可以杜绝内存的非法访问，虽然牺牲了程序员操作的灵活性，但对程序的健壮性而言，不无裨益。  
 &emsp;&emsp;Java的垃圾回收机制。Java的垃圾回收机制是Java虚拟机提供的管理内存的机制，用于在空闲时间以不定时的方式动态回收无任何引用的对象所占据的内存空间。  
 &emsp;&emsp;Java提供了异常处理机制，程序员可以把一组可能出错的代码放在一个地方，针对可能的错误（异常）编写处理代码，简化错误处理过程，便于恢复。  
-## 1.4  Java程序工作原理  <span id="d1z_1_4"></span>
-### 1.4.1  Java虚拟机  <span id="d1z_1_4_1"></span>
+## 1.4  Java程序工作原理  
+### 1.4.1  Java虚拟机  
 &emsp;&emsp;Java虚拟机（Java Virtual Machine）简称JVM，它不是一台真实的机器，而是想象中的机器，通过模拟真实机器来运行Java程序。  
 &emsp;&emsp;既然是模拟出来的机器，Java虚拟机看起来同样有硬件，如处理器、堆栈、寄存器等，还具有相应的指令系统。  
 &emsp;&emsp;Java程序运行在这个抽象的Java虚拟机上，它是Java程序的运行环境，也是Java 最具吸引力的特性之一。  
@@ -165,7 +165,7 @@
 <br/>
 <img src="../img/d1z/tu1.1.png">
 
-<p align="center">图1.1  Java虚拟机</p>  
+<p align="center">图1.1  Java虚拟机</p>    
 &emsp;&emsp;在理解了Java虚拟机的基础上，接下来介绍Java程序工作原理。如图1.2所示，Java字节码文件先后经过JVM的类装载器、字节码校验器和解释器，最终在操作系统平台上运行。具体各部分的主要功能描述如下。  
 
 - 类装载器。其主要功能是为执行程序寻找和装载所需要的类，就是把字节码文件装到Java虚拟机中。  
@@ -175,15 +175,15 @@
 <br/>
 <br/>
 <img src="../img/d1z/tu1.2.png">
-<p align="center">图1.2  Java程序工作原理</p>  
-### 1.4.2  垃圾回收机制  <span id="d1z_1_4_2"></span>
+<p align="center">图1.2  Java程序工作原理</p>    
+### 1.4.2  垃圾回收机制  
 &emsp;&emsp;在C++中，在程序结束运行之前对象会一直占用内存，在程序员明确释放之前不能将其所占内存分配给其他对象。而Java的处理方式不同，当没有对象引用指向原先分配给某个对象的内存时，该内存便成为垃圾。  
 &emsp;&emsp;Java虚拟机提供了一个系统级线程（垃圾回收器线程），它自动跟踪每一块被分配出去的内存空间，自动释放被定义成垃圾的内存。  
 &emsp;&emsp;垃圾回收机制能自动释放内存空间，减轻程序员编程的负担，这是Java 虚拟机具有的一个显著优点。在没有垃圾回收机制的时候，可能要花许多时间来解决释放无用内存的问题，而用Java语言编程的时候，靠垃圾回收机制可大大缩短时间。  
 &emsp;&emsp;垃圾回收机制是一个系统级的线程，它给程序员带来好处的同时，也存在着影响系统性能的问题，因为它要追踪分配的内存，释放没用的内存，这个过程需要花费系统资源。  
 &emsp;&emsp;程序员可以调用System.gc()这个方法通知Java虚拟机释放无用资源，但Java虚拟机会选择在合适的时候释放无用资源，具体释放的时间，不是程序员调用System.gc()的时刻，而是Java虚拟机决定的，程序员不能精确控制和干预。  
 
-## 1.5  Java SE的结构<span id="d1z_1_5"></span>
+## 1.5  Java SE的结构
 
 &emsp;&emsp;Java SE是Java的基础，它包含Java语言基础、JDBC数据库操作、I/O（输入/输出）、网络通信、多线程等技术，Java SE（J2SE）的结构如图1.3所示。  
 &emsp;&emsp;JDK是一个Java应用程序的开发环境。它由两部分组成，下层是处于操作系统层之上的运行环境，上层由编译工具、调试工具和运行Java应用程序所需的工具组成。  
@@ -195,7 +195,7 @@
 <br/>
 <br/>
 <img src="../img/d1z/tu1.3.png">
-<p align="center">图1.3  J2SE平台结构</p>
+<p align="center">图1.3  J2SE平台结构</p>    
 JDK包含以下常用类库。
 - java.lang：系统基础类库，其中包括字符串类String等。
 - java.io：输入输出类库，例如进行文件读写需要用到。
@@ -204,8 +204,8 @@ JDK包含以下常用类库。
 -  java.sql：数据库操作类库，连接数据库、执行SQL语句、返回结果集需要用到该类库。
 -  javax.servlet：JSP、Servlet等使用到的类库，是Java后台技术的核心类库。
 
-## 1.6  Java开发环境搭建<span id="d1z_1_6"></span>
-### 1.6.1  配置JDK  <span id="d1z_1_6_1"></span>
+## 1.6  Java开发环境搭建
+### 1.6.1  配置JDK  
 #### &emsp;&emsp;1．下载并安装JDK   
 &emsp;&emsp;要想编译、运行Java程序，首先要下载JDK。在下载时需要注意，针对不同的平台有不同版本的JDK，需要选择待安装平台下的JDK下载。  
 &emsp;&emsp;另外，JDK的使用也不是版本越新越好。在企业级的开发中，通常一个项目中的开发人员统一使用一个稳定版本的JDK，避免因为各版本JDK的差异带来问题。  
@@ -213,7 +213,8 @@ JDK包含以下常用类库。
 
 #### &emsp;&emsp;2．Java环境变量
 &emsp;&emsp;因为不同版本的JDK在安装过程中，有些会自动配置一些环境变量，有些需要用户手动配置。表1.1列举出通常需要配置的环境变量，如果JDK安装过程中没有配置，请大家手动配置。  
-<p align="center">表1.1  需要配置的环境变量</p>  
+<p align="center">表1.1  需要配置的环境变量</p>    
+
 | 变量名 | 说明 | 举例 |
 | ----- | ---- | ---- |
 | JAVA_HOME  | JDK的安装路径   | C:\jdk1.6   |
@@ -225,30 +226,30 @@ JDK包含以下常用类库。
 &emsp;&emsp;接下来以配置JAVA_HOME为例，具体介绍如何配置环境变量。在Windows XP系统中，右击“我的电脑”，选择“属性”→“高级”→“环境变量”命令，或者在Win 7系统中，右击“计算机”，选择“属性”→“高级系统设置”→“环境变量”命令，在“系统变量(S)”中，新建JAVA_HOME环境变量，如图1.4所示。  
 <br/>
 
-<p align="center"><img src="../img/d1z/tu1.4.jpg"></p>
-<p align="center">图1.4  配置环境变量</p>
+<p align="center"><img src="../img/d1z/tu1.4.jpg"></p>  
+<p align="center">图1.4  配置环境变量</p>    
 &emsp;&emsp;其他的环境变量配置类似，不同的是PATH这个环境变量不是新建的，是选中该环境变量后进行编辑修改。  
-## 1.6.2  验证JDK是否安装成功  <span id="d1z_1_6_2"></span>
+## 1.6.2  验证JDK是否安装成功  
 &emsp;&emsp;在控制台下输入java-version命令，出现如图1.5所示的结果即表明JDK安装成功。  
 <br/>
-<p align="center"><img src="../img/d1z/tu1.5.jpg"></p>
-<p align="center">图1.5  验证JDK安装是否成功</p>
-## 1.7  第一个Java程序<span id="d1z_1_7"></span>
-### 1.7.1  编辑、编译、运行Java程序  <span id="d1z_1_7_1"></span>
+<p align="center"><img src="../img/d1z/tu1.5.jpg"></p>  
+<p align="center">图1.5  验证JDK安装是否成功</p>    
+## 1.7  第一个Java程序
+### 1.7.1  编辑、编译、运行Java程序 
 #### &emsp;&emsp;1．编辑Java程序
 &emsp;&emsp;JDK中没有提供Java编辑器，需要使用者自己选择一个方便易用的编辑器或集成开发工具。作为初学者，可以使用记事本、UltraEdit、Editplus作为Java编辑器，编写第一个Java程序。下面以记事本为例，使用它编写HelloWorld程序。  
 &emsp;&emsp;打开“记事本”，按照图1.6所示输入代码（注意大小写和程序缩进），完成后将其保存为HelloWorld.java文件（注意不要保存成HelloWorld.java.txt文件）。  
 <br/>
-<p align="center"><img src="../img/d1z/tu1.6.jpg"></p>
-<p align="center">图1.6  HelloWorld程序代码</p>
+<p align="center"><img src="../img/d1z/tu1.6.jpg"></p>  
+<p align="center">图1.6  HelloWorld程序代码</p>    
 #### &emsp;&emsp;2．编译java源文件
 &emsp;&emsp;在控制台环境下，进入到保存HelloWorld.java的目录，执行javac HelloWorld.java命令，对源文件进行编译。Java编译器会在当前目录下产生一个以.class为后缀的字节码文件。  
 #### &emsp;&emsp;3．运行class文件
 &emsp;&emsp;执行java HelloWorld（注意没有.class后缀）命令，会输出执行结果，如图1.7所示。
 <br/>
-<p align="center"><img src="../img/d1z/tu1.7.png"></p>
-<p align="center">图1.7  编译和运行Java程序</p>
-### 1.7.2  Java程序概述  <span id="d1z_1_7_2"></span>
+<p align="center"><img src="../img/d1z/tu1.7.png"></p>  
+<p align="center">图1.7  编译和运行Java程序</p>    
+### 1.7.2  Java程序概述  
 &emsp;&emsp;Java源文件以java为扩展名。源文件的基本组成部分是类（class），如本例中的HelloWorld类。  
 &emsp;&emsp;一个源文件中最多只能有一个public类，其他类的个数不限，如果源文件包含一个public类，则该源文件必须以public类名命名。  
 &emsp;&emsp;Java程序的执行入口是main()方法，它有固定的书写格式。  
@@ -278,7 +279,7 @@ public static void main(String[] args){
 System.out.println("HelloWorld!");
 ```
 &emsp;&emsp;System.out.println("*********")方法的作用很简单，就是向控制台输出*********，输出之后自动换行。前面已经说过，JDK包含了一些常用类库，提供了一些常用方法，这个方法就是java.lang.System类里提供的方法。如果程序员希望向控制台输出内容之后，不用自动换行，则使用方法System.out.print()。  
-### 1.7.3  Java注释  <span id="d1z_1_7_3"></span>
+### 1.7.3  Java注释  
 &emsp;&emsp;为什么要有注释呢？  
 &emsp;&emsp;假设一个程序员新进入一个项目组，接手一个已离职程序员未完成的软件模块功能，当他打开原程序员编写的代码时，其中一个方法可以有上百行代码，没有任何注释。这样造成的结果是，新程序员要花费很长的时间去理解原程序员的业务逻辑和思路，可能还会出现理解错误的情况。怎么解决这个问题呢？在一个规范化的软件开发项目组里，程序的编写是必须要有注释的，Java程序编写也不例外。  
 &emsp;&emsp;什么是注释？  
@@ -325,16 +326,19 @@ String engName = "方鸿渐";//工程师用户名
 -  @see，对类、属性、方法的说明，即相关主题。
 -  @param，对方法的说明，对方法中某参数的说明。
 -  @return，对方法的说明，对方法返回值的说明。
--  @exception，对方法的说明，对方法可能抛出的异常进行说明。
+-  @exception，对方法的说明，对方法可能抛出的异常进行说明。  
+
 &emsp;&emsp;下面是第一个Java程序增加注释后的完整程序。  
+
 ```
-/**
+
+/ **
 * Copy Right Information   	 	: blue-dot
 * Project                    	: blue-bridge
 * JDK version used          	: jdk1.6.0
 * Author                      	: Jack Yang
 * Version                     	:  2.1.0, 2013/8/1
-**/
+* */
 public class HelloWorld{
 /**
 * Description: 主函数，程序入口
@@ -347,7 +351,7 @@ System.out.println("HelloWorld!");//输出HelloWorld!到控制台
 }
 ```
 &emsp;&emsp;本章介绍的与注释相关的内容较为详细，对于初学者来说，可能理解起来有些困难。没有关系，随着对Java学习的逐渐深入，再回过头来理解就会更加容易。  
-### 1.7.4  常见Java集成开发环境  <span id="d1z_1_7_4"></span>
+### 1.7.4  常见Java集成开发环境  
 &emsp;&emsp;以下是常见的Java集成开发环境。  
 &emsp;&emsp;1．Eclipse  
 &emsp;&emsp;Eclipse 是一个开放源代码的、基于Java的可扩展开发平台。就其本身而言，它只是一个框架和一组服务，用于通过插件组件构建开发环境。  
@@ -355,7 +359,7 @@ System.out.println("HelloWorld!");//输出HelloWorld!到控制台
 &emsp;&emsp;MyEclipse是一个十分优秀的用于开发JavaSE、JavaEE的Eclipse插件集合，MyEclipse的功能非常强大，支持也十分广泛，尤其是对各种开源产品的支持非常不错。  
 &emsp;&emsp;MyEclipse企业级工作平台（MyEclipse Enterprise Workbench，简称MyEclipse）是对Eclipse IDE的扩展，利用MyEclipse可以极大地提高在连接数据库，JavaEE的开发、发布以及应用程序服务器的整合方面的工作效率。它是功能丰富的JavaEE集成开发环境，包括了完备的编码、调试、测试和发布功能，完整支持HTML、CSS、JavaScript、SQL、Struts和Hibernate等。  
 
-## 1.8  上机任务<span id="d1z_1_8"></span>
+## 1.8  上机任务
 
 
 #### 目标：完成本章1.7节中的程序。
@@ -371,7 +375,7 @@ System.out.println("HelloWorld!");//输出HelloWorld!到控制台
 
  
 
-## 1.9  上机任务<span id="d1z_1_9"></span>
+## 1.9  上机任务
 
 
 #### 目标：编写“蓝桥计划Java工程师管理系统”（以下简称“蓝桥系统”）主界面。
@@ -380,8 +384,8 @@ System.out.println("HelloWorld!");//输出HelloWorld!到控制台
 #### 需求：主界面如图1.8所示。
 
 <br/>
-<p align="center"><img src="../img/d1z/tu1.8.jpg"></p>
-<p align="center">图1.8  “蓝桥系统”主界面</p>
+<p align="center"><img src="../img/d1z/tu1.8.jpg"></p>  
+<p align="center">图1.8  “蓝桥系统”主界面</p>  
 #### 时间：20分钟。
 
 
@@ -396,21 +400,21 @@ System.out.println("HelloWorld!");//输出HelloWorld!到控制台
 &emsp;&emsp;（1）添加编译功能。  
 &emsp;&emsp;将“菜单文字”中的内容修改为“JAVAC”（自定义名称），在“命令”中选择JDK的javac.exe文件，例如“C:\jdk1.6\bin\javac.exe”（如果系统参数PATH已经设置，此处可以直接填写javac.exe），在“参数”中选择“文件名”，即显示为“$(FileName)”，在“初始目录”中选择“文件目录”，即显示为“$(FileDir)”，在“动作”中选择“捕获输出”，最后单击“应用”和“确定”按钮（如图1.9所示），即完成了添加编译功能。  
 <br/>
-<p align="center"><img src="../img/d1z/tu1.9.jpg"></p>
-<p align="center">图1.9  使用EditPlus添加Java编译功能</p>
+<p align="center"><img src="../img/d1z/tu1.9.jpg"></p>  
+<p align="center">图1.9  使用EditPlus添加Java编译功能</p>    
 &emsp;&emsp;（2）添加执行功能。  
 &emsp;&emsp;添加执行功能和添加编译功能非常类似，不同之处在于“菜单文字”中的内容修改为“JAVA”（自定义名称），“命令”需要选择JDK中的java.exe文件，“参数”需要选择“文件名（不含扩展名）”，其他的和添加编译功能一致，如图1.10所示。  
 <br/>
-<p align="center"><img src="../img/d1z/tu1.10.jpg"></p>
-<p align="center">图1.10  使用EditPlus添加Java运行功能</p>
+<p align="center"><img src="../img/d1z/tu1.10.jpg"></p>  
+<p align="center">图1.10  使用EditPlus添加Java运行功能</p>    
 &emsp;&emsp;接下来可以把HelloWorld程序粘贴到EditPlus中，按Ctrl+1组合键会编译程序，如图1.11所示。再按Ctrl+2组合键则会运行刚才编译的程序，如图1.12所示。编译的所有信息都会显示在输出窗口中，如果出现错误，双击某一行错误信息，EditPlus会自动定位到出错行。  
 <br/>
-<p align="center"><img src="../img/d1z/tu1.11.jpg"></p>
-<p align="center">图1.11  使用EditPlus编译HelloWorld程序</p>
+<p align="center"><img src="../img/d1z/tu1.11.jpg"></p>  
+<p align="center">图1.11  使用EditPlus编译HelloWorld程序</p>    
 <br/>
-<p align="center"> <img src="../img/d1z/tu1.12.jpg"></p>
-<p align="center">图1.12  使用EditPlus运行HelloWorld程序</p>
-## 1.10  本章练习<span id="d1z_1_10"></span>
+<p align="center"> <img src="../img/d1z/tu1.12.jpg"></p>  
+<p align="center">图1.12  使用EditPlus运行HelloWorld程序</p>    
+## 1.10  本章练习
 
 1  Java字节码文件的后缀为（    ）。（选择一项）  
 &emsp;&emsp;A．.docx  

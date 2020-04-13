@@ -115,8 +115,6 @@ class TestString3
 
 
 
-
-
 ### 5.1.2  String类的使用  
 
 #### 1．连接字符串
@@ -167,6 +165,11 @@ public class TestStringConcat {
 <p align="center"><img  src="../img/d5z/tu5.2.png"/></p>
 <p align="center">图5.2  连接String字符串 </p>  
 
+
+
+
+
+
 #### 2．比较字符串
 
 &emsp;&emsp;比较字符串常用的两个方法是运算符“==”和String类的equals方法。
@@ -207,6 +210,8 @@ public class TestStringEquals {
 
  <p align="center"><img  src="../img/d5z/tu5.3.png"/></p>
 <p align="center"> 图5.3  比较String字符串 </p>  
+
+
 
 ## 5.2  String类的常用方法
 
@@ -277,6 +282,7 @@ public class TestArrayMethod {
 <p align="center"><img  src="../img/d5z/tu5.4.png"/></p>
 <p align="center"> 图5.4  String类常用方法综合实例一</p>  
 
+
 - public boolean startsWith(String prefix)
 
 &emsp;&emsp;判断此字符串是否以指定的前缀开始。
@@ -341,6 +347,7 @@ public class TestStringMethod2 {
 
 <p align="center"><img  src="../img/d5z/tu5.5.png"/></p>
 <p align="center">图5.5  String类常用方法综合实例二 </p>  
+
 
 - public static String valueOf(基本数据类型参数)
 
@@ -411,6 +418,7 @@ public class TestStringMethod3{
 
 <p align="center"><img  src="../img/d5z/tu5.6.png"/></p>
 <p align="center"> 图5.6  String类常用方法综合实例三 </p>  
+
 
 &emsp;&emsp;在上面的例子中，用“,”将字符串“Mary,F,1976”分隔成一个新的字符串数组，这个字符串数组的长度为3，每个元素存的内容分别是“Mary”、“F”和“1976”。假设原来的字符串是“,Mary,F,1976”（第一个字符就是‘,’）、“,Mary,F,1976”（第一个字符是空格，第二个字符是‘,’），其结果又是如何呢？请大家自行练习获得结果。
 
@@ -511,7 +519,6 @@ public class StrCount{
 <p align="center"> 图5.8  Java工程师注册功能的实现</p>  
 
 
-
 时间：15分钟。
 
 
@@ -599,7 +606,6 @@ public class EngRegister{
 <p align="center"> 图5.9  使用split方法拆分字符串 </p>  
 
 
-
 时间：10分钟。
 
 
@@ -620,8 +626,10 @@ public class EngRegister{
 <p align="center"><img  src="../img/d5z/tu5.10.png"/></p>
 <p align="center"> 图5.10  检查文件名和邮箱一 </p>  
 
+
 <p align="center"><img  src="../img/d5z/tu5.11.png"/></p>
 <p align="center"> 图5.11  检查文件名和邮箱二</p>  
+
 
 <p align="center"><img  src="../img/d5z/tu5.12.png"/></p>
 <p align="center">图5.12  检查文件名和邮箱三</p>  
@@ -722,15 +730,21 @@ public class FileUpload{
 <p align="center"><img  src="../img/d5z/tu5.13.png"/></p>
 <p align="center"> 图5.13  Java API文档的文档结构 </p>  
 
+
 &emsp;&emsp;如果要查找String字符串类的其他方法，可以在“索引”处输入String，在弹出的对话框（见图5.14）中选择相关主题，单击“显示”按钮，就会显示String类的相关内容，如图5.15所示。
 
 &emsp;&emsp;在String类的文档中，主要包括以下内容：类的继承和被继承关系、类的声明、类的功能说明、属性列表、构造方法列表和方法列表等。其中每个属性、构造方法和方法都包含一个超链接，通过单击该链接可以查看更详细的说明。
 
 <p align="center"><img  src="../img/d5z/tu5.14.png"/></p>
+
+
 <p align="center"> 图5.14  在Java API文档中选择主题</p>  
+
 
 <p align="center"><img  src="../img/d5z/tu5.15.png"/></p>
 <p align="center"> 图5.15  Java API文档查询结果 </p>  
+
+
 ## 5.9  上机任务
 
 #### 目标：使用Java API文档查找String字符串类的方法，并使用找到的方法。
@@ -858,7 +872,6 @@ public class TestStringBuffer {
 
 <p align="center"><img  src="../img/d5z/tu5.16.png"/></p>
 <p align="center"> 图5.16  StringBuffer常用方法</p>  
-
 ### 5.10.3  StringBuffer内存模型  
 
 &emsp;&emsp;StringBuffer是一个内容可变的字符序列，或者说它是一个内容可变的字符串类型。当使用StringBuffer strB1 = new StringBuffer("柳海龙");语句创建StringBuffer对象时，内存结构示意图如图5.17所示。
@@ -866,12 +879,11 @@ public class TestStringBuffer {
 <p align="center"><img  src="../img/d5z/tu5.17.png"/></p>
 <p align="center">图5.17  StringBuffer内存结构示意图一</p>  
 
+
 &emsp;&emsp;当使用strB1.append("工程师")方法时，将之前创建的StringBuffer对象的内容“柳海龙”修改成“柳海龙工程师”，内存结构示意图如图5.18所示。
 
 <p align="center"><img  src="../img/d5z/tu5.18.png"/></p>
 <p align="center"> 图5.18  StringBuffer内存结构示意图二 </p>  
-
-
 
 
 

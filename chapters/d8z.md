@@ -43,8 +43,14 @@
 
 <p align="center"><img  src="../img/d8z/tu8.1.png"/></p>
 <p align="center">图8.1  轿车类 </p>  
+
+
+
 <p align="center"><img  src="../img/d8z/tu8.2.png"/></p>
 <p align="center">图8.2  卡车类 </p>  
+
+
+
 ### 8.1.2  类封装  
 
 &emsp;&emsp;类抽象的目的在于抽象出类，并确定属性和方法，而接下来的类封装，则要在封装的角度隐藏类的属性，提供公有的方法来访问这些属性。
@@ -53,8 +59,14 @@
 
 <p align="center"><img  src="../img/d8z/tu8.3.png"/></p>
 <p align="center"> 图8.3  轿车类  </p>  
+
+
+
 <p align="center"><img  src="../img/d8z/tu8.4.png"/></p>
 <p align="center">图8.4  卡车类</p>  
+
+
+
 &emsp;&emsp;这样的封装过于简单，没有考虑需求，接下来进一步阅读需求，可以发现以下几点。
 
 &emsp;&emsp;（1）租车时可以指定车的类型和品牌（或吨位），之后不允许修改。
@@ -73,8 +85,13 @@
 
 <p align="center"><img  src="../img/d8z/tu8.5.png"/></p>
 <p align="center">图8.5  调整后的轿车类 </p>  
+
+
+
 <p align="center"><img  src="../img/d8z/tu8.6.png"/></p>
 <p align="center">图8.6  调整后的卡车类 </p>  
+
+
 
 &emsp;&emsp;封装后的Car类代码如下所示，具体内容看注释。
 
@@ -409,6 +426,9 @@ class TestZuChe
 
 <p align="center"><img  src="../img/d8z/tu8.7.png"/></p>
 <p align="center">图8.7 《租车系统》运行结果</p>  
+
+
+
 ### 8.1.3  方法的实现  
 
 &emsp;&emsp;在Car类和Truck类的代码中，addOil()方法和drive()方法的功能还没有实现，接下来结合需求，分别完成Car类和Truck类中的这两个方法。
@@ -516,7 +536,6 @@ class TestZuChe2
 <p align="center">图8.8 《租车系统》测试结果 </p>  
 
 
-
 ## 8.2  上机任务
 
 #### 目标：完成本章8.1节中的全部程序。
@@ -545,6 +564,8 @@ class TestZuChe2
 
 <p align="center"><img  src="../img/d8z/tu8.9.png"/></p>
 <p align="center">图8.9  继承的类图</p>  
+
+
 
 &emsp;&emsp;继承的语法形式如下。
 
@@ -738,6 +759,8 @@ public class Car extends Vehicle
 <p align="center"><img  src="../img/d8z/tu8.10.png"/></p>
 <p align="center">图8.10  private类型继承时报错 </p>  
 
+
+
 &emsp;&emsp;这里暂且不讨论报错的原因，这是下一小节介绍的重点，只需要把Vehicle类私有的成员变量name、oil和loss改成默认类型的，编译即可通过。
 
 &emsp;&emsp;下面是Truck类的定义。
@@ -792,6 +815,8 @@ public class Truck extends Vehicle
 <p align="center"><img  src="../img/d8z/tu8.11.png"/></p>
 <p align="center">图8.11 《租车系统》运行结果 </p>  
 
+
+
 &emsp;&emsp;修改8.1节TestZuChe2类的代码，将原先创建的Car类对象替换成Truck类对象，代码如下，运行结果如图8.12所示。
 
 
@@ -833,6 +858,9 @@ class TestZuChe2
 
 <p align="center"><img  src="../img/d8z/tu8.12.png"/></p>
 <p align="center">图8.12 《租车系统》测试结果</p>  
+
+
+
 ### 8.3.3  继承和访问权限  
 
 &emsp;&emsp;前面在《租车系统》中，Car类和Truck类继承自Vehicle类，通过它们介绍了如何使用继承。接下来，需要了解继承和访问权限之间的关系。
@@ -938,6 +966,9 @@ class TestZuChe3
 
 <p align="center"><img  src="../img/d8z/tu8.13.png"/></p>
 <p align="center">图8.13  子类重写父类方法 </p>  
+
+
+
 &emsp;&emsp;在上面的例子中，子类Truck完全重写了父类Vehicle的drive()方法。还有一种在方法重写的过程中经常遇到的情况是，子类并不需要全部重写父类的方法，而只是需要在父类方法的基础上增加一些功能，这样可以在子类重写的方法中编写“super.父类方法名();”的代码，调用父类被重写的方法。
 
 &emsp;&emsp;另外，重写需要满足如下条件。
@@ -1128,6 +1159,8 @@ class Sub extends Super {
 <p align="center"><img  src="../img/d8z/tu8.14.png"/></p>
 <p align="center">图8.14  继承中的初始化</p>  
 
+
+
 &emsp;&emsp;通过运行结果可以看出，在第一次实例化子类时，先调用父类的静态块，再调用子类的静态块，之后再调用父类的非静态块和构造方法，再调用子类的非静态块和构造方法。注意，当第二次实例化子类时，父类和子类的静态块都不会再被调用，因为它们是静态块，属于类级别的，只会被调用一次。
 
 ## 8.4  上机任务
@@ -1241,6 +1274,9 @@ class TestZuChe4
 
 <p align="center"><img  src="../img/d8z/tu8.15.png"/></p>
 <p align="center">图8.15 “租车系统”运行结果 </p>  
+
+
+
 &emsp;&emsp;在写Driver类的过程中，驾驶员获取车辆信息的功能用了两个重载方法，如果要获取轿车信息，则输入的是轿车对象，方法体内调用轿车对象的方法；如果要获取卡车信息，则输入的是卡车对象，方法体内调用卡车对象的方法。如果需要从Vehicle类继承出10种车辆类型，则在Driver类需要中写10个方法。这样的做法，看起来有些傻！
 
 &emsp;&emsp;接下来用多态的方式解决这个问题。
@@ -1406,6 +1442,8 @@ class TestZuChe6
 <p align="center"><img  src="../img/d8z/tu8.16.png"/></p>
 <p align="center">图8.16  向下转型</p>  
 
+
+
 &emsp;&emsp;从运行结果可以看出，对象v是可以强制类型转换成Car类型的，因为它本身实例化的时候就是Car类型，所以可以进行强制类型转换，并且转换完之后可以调用Car类特有的方法getBrand()。但是对象v是不可以强制类型转换成Truck类型的，对象v实例化的时候是Car类型，把Car类型转换成Truck类型，会抛出异常。
 
 &emsp;&emsp;程序员编程的过程中，在进行对象的强制类型转换时，不知道具体运行时是否会抛出异常，这种情况是不能接受的。Java提供了instanceof运算符（不是方法），可以进行类型判断，避免抛出异常。instanceof运算符的语法形式如下。
@@ -1466,6 +1504,8 @@ class TestZuChe7
 
 <p align="center"><img  src="../img/d8z/tu8.17.png"/></p>
 <p align="center">图8.17  instanceof运算符使用</p>  
+
+
 
 &emsp;&emsp;此外，不难发现多态的两种表现形式就是重载和重写。例如，通过Driver类中重载的callShow()方法调用不同对象的show()方法，通过重写后的show()方法获取不同类型的车辆信息。
 
