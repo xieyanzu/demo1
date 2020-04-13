@@ -166,6 +166,8 @@
 <img src="../img/d1z/tu1.1.png">
 
 <p align="center">图1.1  Java虚拟机</p>    
+
+
 &emsp;&emsp;在理解了Java虚拟机的基础上，接下来介绍Java程序工作原理。如图1.2所示，Java字节码文件先后经过JVM的类装载器、字节码校验器和解释器，最终在操作系统平台上运行。具体各部分的主要功能描述如下。  
 
 - 类装载器。其主要功能是为执行程序寻找和装载所需要的类，就是把字节码文件装到Java虚拟机中。  
@@ -176,6 +178,8 @@
 <br/>
 <img src="../img/d1z/tu1.2.png">
 <p align="center">图1.2  Java程序工作原理</p>    
+
+
 ### 1.4.2  垃圾回收机制  
 &emsp;&emsp;在C++中，在程序结束运行之前对象会一直占用内存，在程序员明确释放之前不能将其所占内存分配给其他对象。而Java的处理方式不同，当没有对象引用指向原先分配给某个对象的内存时，该内存便成为垃圾。  
 &emsp;&emsp;Java虚拟机提供了一个系统级线程（垃圾回收器线程），它自动跟踪每一块被分配出去的内存空间，自动释放被定义成垃圾的内存。  
@@ -196,6 +200,8 @@
 <br/>
 <img src="../img/d1z/tu1.3.png">
 <p align="center">图1.3  J2SE平台结构</p>    
+
+
 JDK包含以下常用类库。
 - java.lang：系统基础类库，其中包括字符串类String等。
 - java.io：输入输出类库，例如进行文件读写需要用到。
@@ -228,12 +234,14 @@ JDK包含以下常用类库。
 
 <p align="center"><img src="../img/d1z/tu1.4.jpg"></p>  
 <p align="center">图1.4  配置环境变量</p>    
+
 &emsp;&emsp;其他的环境变量配置类似，不同的是PATH这个环境变量不是新建的，是选中该环境变量后进行编辑修改。  
 ## 1.6.2  验证JDK是否安装成功  
 &emsp;&emsp;在控制台下输入java-version命令，出现如图1.5所示的结果即表明JDK安装成功。  
 <br/>
 <p align="center"><img src="../img/d1z/tu1.5.jpg"></p>  
 <p align="center">图1.5  验证JDK安装是否成功</p>    
+
 ## 1.7  第一个Java程序
 ### 1.7.1  编辑、编译、运行Java程序 
 #### &emsp;&emsp;1．编辑Java程序
@@ -242,6 +250,7 @@ JDK包含以下常用类库。
 <br/>
 <p align="center"><img src="../img/d1z/tu1.6.jpg"></p>  
 <p align="center">图1.6  HelloWorld程序代码</p>    
+
 #### &emsp;&emsp;2．编译java源文件
 &emsp;&emsp;在控制台环境下，进入到保存HelloWorld.java的目录，执行javac HelloWorld.java命令，对源文件进行编译。Java编译器会在当前目录下产生一个以.class为后缀的字节码文件。  
 #### &emsp;&emsp;3．运行class文件
@@ -249,6 +258,7 @@ JDK包含以下常用类库。
 <br/>
 <p align="center"><img src="../img/d1z/tu1.7.png"></p>  
 <p align="center">图1.7  编译和运行Java程序</p>    
+
 ### 1.7.2  Java程序概述  
 &emsp;&emsp;Java源文件以java为扩展名。源文件的基本组成部分是类（class），如本例中的HelloWorld类。  
 &emsp;&emsp;一个源文件中最多只能有一个public类，其他类的个数不限，如果源文件包含一个public类，则该源文件必须以public类名命名。  
@@ -386,6 +396,7 @@ System.out.println("HelloWorld!");//输出HelloWorld!到控制台
 <br/>
 <p align="center"><img src="../img/d1z/tu1.8.jpg"></p>  
 <p align="center">图1.8  “蓝桥系统”主界面</p>  
+
 #### 时间：20分钟。
 
 
@@ -402,18 +413,22 @@ System.out.println("HelloWorld!");//输出HelloWorld!到控制台
 <br/>
 <p align="center"><img src="../img/d1z/tu1.9.jpg"></p>  
 <p align="center">图1.9  使用EditPlus添加Java编译功能</p>    
+
 &emsp;&emsp;（2）添加执行功能。  
 &emsp;&emsp;添加执行功能和添加编译功能非常类似，不同之处在于“菜单文字”中的内容修改为“JAVA”（自定义名称），“命令”需要选择JDK中的java.exe文件，“参数”需要选择“文件名（不含扩展名）”，其他的和添加编译功能一致，如图1.10所示。  
 <br/>
 <p align="center"><img src="../img/d1z/tu1.10.jpg"></p>  
 <p align="center">图1.10  使用EditPlus添加Java运行功能</p>    
+
 &emsp;&emsp;接下来可以把HelloWorld程序粘贴到EditPlus中，按Ctrl+1组合键会编译程序，如图1.11所示。再按Ctrl+2组合键则会运行刚才编译的程序，如图1.12所示。编译的所有信息都会显示在输出窗口中，如果出现错误，双击某一行错误信息，EditPlus会自动定位到出错行。  
 <br/>
 <p align="center"><img src="../img/d1z/tu1.11.jpg"></p>  
 <p align="center">图1.11  使用EditPlus编译HelloWorld程序</p>    
+
 <br/>
 <p align="center"> <img src="../img/d1z/tu1.12.jpg"></p>  
 <p align="center">图1.12  使用EditPlus运行HelloWorld程序</p>    
+
 ## 1.10  本章练习
 
 1  Java字节码文件的后缀为（    ）。（选择一项）  
